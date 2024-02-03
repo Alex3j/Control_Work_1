@@ -68,18 +68,14 @@ int main() {
         std::cout << "1. Add account\n2. Delete account\n3. Update account\n4. Display all accounts\n5. Exit\n";
         std::cout << "Enter your choice: ";
         std::cin >> choice;
-
         if (choice == 5) {
             break;
         }
-
         if (choice < 1 || choice > 4) {
             std::cout << "Invalid choice. Please try again.\n";
             continue;
         }
-
         funcPtrArr[choice - 1]();
     }
-
     return 0;
 }
